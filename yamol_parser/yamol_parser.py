@@ -3,7 +3,7 @@
 ========================
     使用方法
 ========================
-# path: <dir_patth>/<file_name>.json
+# path: <dir_path>/<file_name>.json
 # static_dir_path: <dir_path>/<static_dir>
 # discussion_path: <dir_path>/<static_dir>/discussion.html
 1. 建立物件
@@ -11,6 +11,12 @@
 
 2. 執行分析並回傳路徑
   result_path = parser()
+========================
+    執行邏輯
+========================
+分析的過程會把資料存下來
+分成 json, 圖檔, discussion.html
+後兩者會放在 static 的資料夾
 '''
 
 from os.path import isabs, isfile, isdir, basename, dirname, join
