@@ -11,6 +11,9 @@ Abstact:
      belonged to every module of the package into the package namespace, and is used for syntax experiment, 
      respectively.
      
-  2. The main function is showed in '__init__.py'.
+  2. The main utility is showed in '__init__.py'.
   
   3. Other modules(e.g. base.py) are not of critical importance, and just for supplying test objects.
+
+What's New:
+  1. Add main.py, which shows how to build a proxy variable for a designated object in 'arithmetic' module.

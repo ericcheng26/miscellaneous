@@ -19,7 +19,7 @@ pck_dir = basename(dirname(__file__))
 # 把所有模組的物件及其名稱取出
 objects = []
 for f in modules:
-	# 如果要用對路徑, package arg. 要定義
+	# 如果要用相對路徑, package arg. 要定義
 	m = import_module("%s."%pck_dir + f)
 	for n in m.__objname__:
 		objects.append([n, m.__dict__[n]])
